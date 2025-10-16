@@ -2,16 +2,55 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <title>La Bastille Kasse</title>
-  <link rel="stylesheet" href="style.css">
+  <title>La Bastille – Kasseapparat</title>
 </head>
 <body>
   <h1>La Bastille – Kasseapparat</h1>
-  <div id="varer"></div>
-  <h2>Handleliste</h2>
-  <ul id="handleliste"></ul>
-  <button onclick="sendSalg()">Send salg</button>
 
-  <script src="script.js"></script>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Velg varer</legend>
+
+      <label>
+        <input type="checkbox" name="varer" value="Brød">
+        Brød – 10 kr
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="varer" value="Ost">
+        Ost – 25 kr
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="varer" value="Vin">
+        Vin – 60 kr
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="varer" value="Kjøtt">
+        Kjøtt – 40 kr
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="varer" value="Krydder">
+        Krydder – 15 kr
+      </label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Rabatt</legend>
+      <label><input type="radio" name="rabatt" value="0" checked> Ingen</label><br>
+      <label><input type="radio" name="rabatt" value="5"> −5%</label><br>
+      <label><input type="radio" name="rabatt" value="10"> −10%</label><br>
+      <label><input type="radio" name="rabatt" value="20"> −20%</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Kommentar</legend>
+      <textarea name="kommentar" rows="4" cols="50" placeholder="Skriv inn spesielle ønsker..."></textarea>
+    </fieldset>
+
+    <button type="submit">Send salg</button>
+  </form>
 </body>
 </html>
